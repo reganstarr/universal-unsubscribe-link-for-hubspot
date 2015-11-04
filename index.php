@@ -32,7 +32,6 @@ $hubspotApiKey = getenv('HUBSPOT_API_KEY');
 					<form method="post" action="">
 						<div class="form-group">
 							<p>Enter your email address to unsubscribe.</p>
-							<label>Email address</label>
 							<input type="text" class="form-control" name="email" placeholder="Email">
 						</div><!-- form-group -->
 						<div class="form-group">

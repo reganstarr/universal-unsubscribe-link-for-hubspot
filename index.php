@@ -25,14 +25,15 @@ $hubspotApiKey = getenv('HUBSPOT_API_KEY');
 		<div class="panel panel-default" style="margin-top:40px;">
 			<div class="panel-body">
 				<h2>Unsubscribe</h2>
+				<br>
 				<?php
 				if($_SERVER['REQUEST_METHOD'] != 'POST'){
 				?>
-					<form method="post" action="<?php echo $_SERVER[REQUEST_URI]; ?>">
+					<form method="post" action="">
 						<div class="form-group">
 							<p>Enter your email address to unsubscribe.</p>
 							<label>Email address</label>
-							<input type="text" class="form-control" name="email">
+							<input type="text" class="form-control" name="email" placeholder="Email">
 						</div><!-- form-group -->
 						<div class="form-group">
 							<button type="submit" class="btn btn-primary">Unsubscribe</button>
